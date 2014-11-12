@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceServer() *schema.Resource {
