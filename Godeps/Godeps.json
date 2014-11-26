@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/svend/terraform-provider-dummy",
+	"ImportPath": "github.com/whitepages/terraform-provider-dummy",
 	"GoVersion": "go1.3.3",
 	"Deps": [
 		{

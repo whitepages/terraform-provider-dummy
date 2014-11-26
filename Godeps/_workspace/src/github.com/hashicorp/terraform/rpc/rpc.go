@@ -6,7 +6,7 @@ import (
 	"net/rpc"
 	"sync"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
 )
 
 // nextId is the next ID to use for names registered.

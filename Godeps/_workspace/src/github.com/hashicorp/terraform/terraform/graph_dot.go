@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/depgraph"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/depgraph"
 )
 
 // GraphDotOpts are options for turning a graph into dot format.

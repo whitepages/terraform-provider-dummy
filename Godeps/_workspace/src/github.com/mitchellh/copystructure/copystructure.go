@@ -3,7 +3,7 @@ package copystructure
 import (
 	"reflect"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
 )
 
 // Copy returns a deep copy of v.

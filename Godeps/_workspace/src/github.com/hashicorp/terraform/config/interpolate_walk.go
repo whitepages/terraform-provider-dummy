@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
 )
 
 // InterpSplitDelim is the delimeter that is looked for to split when

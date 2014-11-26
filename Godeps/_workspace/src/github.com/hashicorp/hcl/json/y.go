@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
 )
 
 //line parse.y:15

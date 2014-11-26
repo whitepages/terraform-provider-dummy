@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
 )
 
 // This is the tag to use with structures to have settings for HCL

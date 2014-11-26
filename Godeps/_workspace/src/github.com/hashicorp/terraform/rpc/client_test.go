@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
 )
 
 func TestClient_ResourceProvider(t *testing.T) {

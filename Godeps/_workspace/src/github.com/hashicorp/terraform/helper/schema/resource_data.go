@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/mapstructure"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/mapstructure"
 )
 
 // ResourceData is used to query and set the attributes of a resource.

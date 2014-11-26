@@ -3,8 +3,8 @@ package hcl
 import (
 	"fmt"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/json"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/json"
 )
 
 // Parse parses the given input and returns the root object.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/svend/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/schema"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceDNS() *schema.Resource {
