@@ -1,4 +1,4 @@
-# Terraform dummy provider [![Build Status](https://secure.travis-ci.org/svend/terraform-provider-dummy.png)](http://travis-ci.org/svend/terraform-provider-dummy)
+# Terraform dummy provider [![Build Status](https://secure.travis-ci.org/whitepages/terraform-provider-dummy.png)](http://travis-ci.org/whitepages/terraform-provider-dummy)
 
 `terraform-provider-dummy` is a dummy Terraform provider. It does not
 require any configuration, and does not interact with any external
