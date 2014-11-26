@@ -24,9 +24,9 @@ resource "dummy_dns" "host" {
 ```sh
 $ terraform show
 dummy_dns.host:
-  id = example.ex
-  host = example.ex
-  ip_address = 127.0.0.2
+  id = example.com
+  host = example.com
+  ip_address = 192.168.0.1
 ```
 
 ### server
