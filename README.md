@@ -27,6 +27,13 @@ $ terraform plan
 
 ## Resources
 
+### dns
+
+Provides a dummy DNS resource.
+
+* `host` - (Required) The address of the resource
+* `ip_address` - (Calculated) The IP address for the host
+
 ### server
 
 Provides a dummy server resource.
