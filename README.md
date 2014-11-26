@@ -4,7 +4,38 @@
 require any configuration, and does not interact with any external
 providers.
 
-## Example
+## Resources
+
+### dns
+
+Provides a dummy DNS resource.
+
+* `host` - (Required) The address of the resource
+* `ip_address` - (Calculated) The IP address for the host
+
+### Example
+
+```
+resource "dummy_dns" "host" {
+	host = "example.com"
+}
+```
+
+```sh
+$ terraform show
+dummy_dns.host:
+  id = example.ex
+  host = example.ex
+  ip_address = 127.0.0.2
+```
+
+### server
+
+Provides a dummy server resource.
+
+* `address` - (Required) The address of the resource
+
+### Example
 
 ```
 resource "dummy_server" "example" {
@@ -24,18 +55,3 @@ $ terraform plan
 + dummy_server.example.2
     address: "" => "host2.example.com"
 ```
-
-## Resources
-
-### dns
-
-Provides a dummy DNS resource.
-
-* `host` - (Required) The address of the resource
-* `ip_address` - (Calculated) The IP address for the host
-
-### server
-
-Provides a dummy server resource.
-
-* `address` - (Required) The address of the resource
