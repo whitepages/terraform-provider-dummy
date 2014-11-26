@@ -13,7 +13,7 @@ Provides a dummy DNS resource.
 * `host` - (Required) The address of the resource
 * `ip_address` - (Calculated) The IP address for the host
 
-### Example
+#### Example
 
 ```
 resource "dummy_dns" "host" {
@@ -35,7 +35,7 @@ Provides a dummy server resource.
 
 * `address` - (Required) The address of the resource
 
-### Example
+#### Example
 
 ```
 resource "dummy_server" "example" {
