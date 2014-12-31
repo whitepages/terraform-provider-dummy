@@ -1,4 +1,7 @@
-# Terraform dummy provider [![Build Status](https://secure.travis-ci.org/whitepages/terraform-provider-dummy.png)](http://travis-ci.org/whitepages/terraform-provider-dummy)
+# Terraform dummy provider
+
+[![GoDoc](https://godoc.org/github.com/whitepages/terraform-provider-dummy?status.svg)](https://godoc.org/github.com/whitepages/terraform-provider-dummy)
+[![Build Status](https://secure.travis-ci.org/whitepages/terraform-provider-dummy.png)](http://travis-ci.org/whitepages/terraform-provider-dummy)
 
 `terraform-provider-dummy` is a dummy Terraform provider. It does not
 require any configuration, and does not interact with any external
