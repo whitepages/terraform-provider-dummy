@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/mitchellh/reflectwalk"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
 )
 
 func TestInterpolationWalker_detect(t *testing.T) {

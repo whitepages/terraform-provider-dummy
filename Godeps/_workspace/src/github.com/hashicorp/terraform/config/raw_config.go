@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/mitchellh/copystructure"
-	"github.com/mitchellh/reflectwalk"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/copystructure"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
 )
 
 // UnknownVariableValue is a sentinel value that can be used

@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/terraform/flatmap"
-	"github.com/hashicorp/terraform/helper/multierror"
-	"github.com/mitchellh/mapstructure"
-	"github.com/mitchellh/reflectwalk"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/flatmap"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/multierror"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/mapstructure"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
 )
 
 // NameRegexp is the regular expression that all names (modules, providers,
