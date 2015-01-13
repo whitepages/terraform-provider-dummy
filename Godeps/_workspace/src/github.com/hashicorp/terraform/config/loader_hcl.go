@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl"
-	hclobj "github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/hcl/hcl"
+	"github.com/hashicorp/hcl"
+	hclobj "github.com/hashicorp/hcl/hcl"
 )
 
 // hclConfigurable is an implementation of configurable that knows

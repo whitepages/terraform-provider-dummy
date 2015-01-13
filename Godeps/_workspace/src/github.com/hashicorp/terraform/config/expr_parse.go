@@ -3,7 +3,7 @@ package config
 import (
 	"sync"
 
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/multierror"
+	"github.com/hashicorp/terraform/helper/multierror"
 )
 
 // exprErrors are the errors built up from parsing. These should not

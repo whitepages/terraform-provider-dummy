@@ -3,7 +3,7 @@ package rpc
 import (
 	"net/rpc"
 
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform/terraform"
 )
 
 // ResourceProvider is an implementation of terraform.ResourceProvider

@@ -3,7 +3,7 @@ package terraform
 import (
 	"fmt"
 
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/config"
+	"github.com/hashicorp/terraform/config"
 )
 
 // smcUserVariables does all the semantic checks to verify that the

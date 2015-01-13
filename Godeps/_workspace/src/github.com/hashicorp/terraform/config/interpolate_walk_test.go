@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/reflectwalk"
+	"github.com/mitchellh/reflectwalk"
 )
 
 func TestInterpolationWalker_detect(t *testing.T) {
@@ -124,6 +124,25 @@ func TestInterpolationWalker_detect(t *testing.T) {
 								Index: -1,
 								key:   "foo.bar.*.id",
 							},
+						},
+					},
+				},
+			},
+		},
+
+		{
+			Input: map[string]interface{}{
+				"foo": `${concat("localhost", ":8080")}`,
+			},
+			Result: []Interpolation{
+				&FunctionInterpolation{
+					Func: nil,
+					Args: []Interpolation{
+						&LiteralInterpolation{
+							Literal: "localhost",
+						},
+						&LiteralInterpolation{
+							Literal: ":8080",
 						},
 					},
 				},
