@@ -1,7 +1,7 @@
 package lang
 
 import (
-	"github.com/hashicorp/terraform/config/lang/ast"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/config/lang/ast"
 )
 
 // FixedValueTransform transforms an AST to return a fixed value for

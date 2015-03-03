@@ -11,12 +11,12 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/hashicorp/terraform/config"
-	"github.com/hashicorp/terraform/config/module"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/config"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/config/module"
 )
 
-// This is the directory where our test fixtures are.
-const fixtureDir = "./test-fixtures"
+const fixtureDir = // This is the directory where our test fixtures are.
+"./test-fixtures"
 
 func checksumStruct(t *testing.T, i interface{}) string {
 	// TODO(mitchellh): write a library to do this because gob is not

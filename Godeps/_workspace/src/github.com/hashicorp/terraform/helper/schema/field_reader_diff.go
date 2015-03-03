@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/mitchellh/mapstructure"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/mitchellh/mapstructure"
 )
 
 // DiffFieldReader reads fields out of a diff structures.
