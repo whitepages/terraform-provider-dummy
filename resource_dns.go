@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net"
+	"strings"
 
 	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/helper/schema"
 )
@@ -24,6 +25,11 @@ func resourceDNS() *schema.Resource {
 				Type:     schema.TypeString,
 				Computed: true,
 			},
+
+			"ip_address_csv": &schema.Schema{
+				Type:     schema.TypeString,
+				Computed: true,
+			},
 		},
 	}
 }
@@ -39,12 +45,17 @@ func resourceDNSCreate(d *schema.ResourceData, m interface{}) error {
 }
 
 func resourceDNSRead(d *schema.ResourceData, m interface{}) error {
-	ip, err := getFirstIP(d.Get("host").(string))
+	ips, err := getIPs(d.Get("host").(string))
 	if err != nil {
 		return err
 	}
 
-	d.Set("ip_address", ip)
+	if len(ips) == 0 {
+		return fmt.Errorf("No IP addresses found for %s", d.Get("host"))
+	}
+
+	d.Set("ip_address", ips[0])
+	d.Set("ip_address_csv", strings.Join(ips, ","))
 
 	return nil
 }
@@ -57,15 +68,17 @@ func resourceDNSDelete(d *schema.ResourceData, m interface{}) error {
 	return nil
 }
 
-func getFirstIP(host string) (string, error) {
+func getIPs(host string) ([]string, error) {
+	ips := []string{}
+
 	adds, err := net.LookupIP(host)
 	if err != nil {
-		return "", err
+		return ips, err
 	}
 
-	if len(adds) != 1 {
-		return "", fmt.Errorf("Zero or multiple IP addresses found for %s", host)
+	for _, v := range adds {
+		ips = append(ips, v.String())
 	}
 
-	return adds[0].String(), nil
+	return ips, nil
 }
