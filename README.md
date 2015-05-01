@@ -15,6 +15,8 @@ Provides a dummy DNS resource.
 
 * `host` - (Required) The address of the resource
 * `ip_address` - (Calculated) The IP address for the host
+* `ip_address_csv` - (Calculated) A comma separated list of IP
+  addresses for the host
 
 #### Example
 
@@ -30,7 +32,11 @@ dummy_dns.host:
   id = example.com
   host = example.com
   ip_address = 192.168.0.1
+  ip_address_csv = 192.168.0.1
 ```
+
+`ip_address_csv` can be used in a list:
+`["${split(",", dummy_dns.host.ip_address_csv)}"]`
 
 ### server
 
