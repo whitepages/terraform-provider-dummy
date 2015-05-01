@@ -29,12 +29,10 @@ func resourceDNS() *schema.Resource {
 }
 
 func resourceDNSCreate(d *schema.ResourceData, m interface{}) error {
-	ip, err := getFirstIP(d.Get("host").(string))
+	err := resourceDNSRead(d, m)
 	if err != nil {
 		return err
 	}
-
-	d.Set("ip_address", ip)
 
 	d.SetId(d.Get("host").(string))
 	return nil
