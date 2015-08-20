@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/plugin"
-	"github.com/whitepages/terraform-provider-dummy/Godeps/_workspace/src/github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform/plugin"
+	"github.com/hashicorp/terraform/terraform"
 )
 
 func main() {
