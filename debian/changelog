@@ -1,5 +1,0 @@
-terraform-provider-dummy () unreleased; urgency=low
-
-  * Initial import
-
- -- Svend Sorensen <ssorensen@whitepages.com>  Wed, 26 Nov 2014 09:52:09 -0800
